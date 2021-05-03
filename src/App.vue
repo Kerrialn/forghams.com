@@ -1,32 +1,67 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <navbar />
+    <b-loading size="is-small" is-full-page="true" v-model="isLoading">
+    </b-loading>
+    <b-container>
+      <router-view />
+    </b-container>
   </div>
 </template>
 
+<script>
+import { mapGetters } from "vuex"
+import Navbar from "./components/Navbar.vue"
+
+export default {
+  name: "App",
+  components: {
+    Navbar,
+  },
+  computed: {
+    ...mapGetters({
+      isLoading: "getLoading",
+    }),
+  },
+}
+</script>
+
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Heebo", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  background-color: #f8f9fa;
+  min-height: 100vh;
 }
 
-#nav {
-  padding: 30px;
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
+.card {
+  border: 0 !important;
 }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
+.card-header {
+  background-color: #ffffff;
+  border-bottom: 1px solid;
+  border-color: #f8f9fa;
+}
+
+.form-control {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
+.form-control:focus {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
 }
 </style>
