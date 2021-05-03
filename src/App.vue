@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <navbar />
-    <b-loading size="is-small" is-full-page="true" v-model="isLoading">
-    </b-loading>
-    <b-container>
-      <router-view />
-    </b-container>
+
+    <router-view class="min" />
+
+    <div class="container">
+      <div class="row">
+        <div class="text-center small text-muted mt-5">forghams.com ©</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -32,6 +35,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #f8f9fa;
+}
+
+.min {
   min-height: 100vh;
 }
 

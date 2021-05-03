@@ -47,11 +47,13 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <div class="row justify-content-center mt-3">
-      <div class="col-md-6">
-        <div class="card">
-          <div class="card-body">
-            Home
+    <div class="container">
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              Home
+            </div>
           </div>
         </div>
       </div>
