@@ -1,0 +1,59 @@
+<header class="py-3 bg-body-tertiary">
+    <div class="container d-flex flex-wrap justify-content-between">
+        <a href="{{ path('landing') }}" class="mb-3 mb-lg-0 me-lg-auto link-body-emphasis text-decoration-none">
+            <div class="fs-4">Forghams Cuisine</div>
+            <div class="text-muted">{{ 'tag-line'|trans }}</div>
+        </a>
+        <div>
+            <ul class="nav ms-auto">
+                <li class="nav-item dropdown ">
+                    <a class="nav-link dropdown-toggle text-body-tertiary" href="#" role="button" data-bs-toggle="dropdown"
+                       aria-expanded="false">
+                        {{ app.locale == 'en' ? 'English' : 'Français' }}
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{ path('landing', {_locale: 'en'}) }}">English</a></li>
+                        <li><a class="dropdown-item" href="{{ path('landing', {_locale: 'fr'}) }}">French</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link text-body-tertiary" {{ stimulus_action('color-theme', 'toggle', 'click') }}>
+                        <div {{ stimulus_target('color-theme', 'icon') }} class="bi bi-sun-fill"></div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<nav class="py-2">
+    <div class="container d-flex flex-wrap justify-content-center justify-content-md-between">
+        <ul class="nav me-md-auto">
+            <li class="nav-item"><a href="{{ path('landing') }}" class="nav-link px-2 {{ app.request.attributes.get('_route') == 'landing' ? 'link-body-emphasis' : 'text-muted' }}" aria-current="page">{{ 'home'|trans|title }}</a></li>
+            <li class="nav-item"><a href="{{ path('services') }}" class="nav-link px-2 {{ app.request.attributes.get('_route') == 'services' ? 'link-body-emphasis' : 'text-muted' }} ">{{ 'services'|trans|title }}</a>
+{#            <li class="nav-item"><a href="{{ path('booking') }}" class="nav-link px-2 {{ app.request.attributes.get('_route') == 'booking' ? 'link-body-emphasis' : 'text-muted' }} ">{{ 'book-online'|trans|title }}</a></li>#}
+            <li class="nav-item"><a href="{{ path('about') }}" class="nav-link px-2 {{ app.request.attributes.get('_route') == 'about' ? 'link-body-emphasis' : 'text-muted' }}">{{ 'about'|trans|title }}</a></li>
+        </ul>
+        <ul class="nav ms-md-auto">
+            <li class="nav-item">
+                <div class="nav-link link-body-emphasis px-2">
+                    arranforgham@hotmail.co.uk
+                </div>
+            </li>
+            <li class="nav-item link-body-emphasis px-2">
+                <div class="nav-link link-body-emphasis px-2">
+                    (+41) 795882695
+                </div>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.instagram.com/forghamscuisine" target="_blank" class="nav-link link-body-emphasis px-1">
+                    <span class="bi bi-instagram"></span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="https://www.facebook.com/forghamscuisine" target="_blank" class="nav-link link-body-emphasis">
+                    <span class="bi bi-facebook"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
