@@ -12,10 +12,12 @@
     {% endblock %}
 </head>
 <body {{ stimulus_controller('symfony/ux-swup/swup', {
-    containers: ['.swup'],
+    containers: ['#main'],
     animateHistoryBrowsing: true,
 }) }}>
-{{ include('partial/_navbar.html.twig') }}
-{% block body %}{% endblock %}
+<div id="main">
+    {{ include('partial/_navbar.html.twig') }}
+    {% block body %}{% endblock %}
+</div>
 </body>
 </html>
