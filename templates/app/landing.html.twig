@@ -1,25 +1,30 @@
 {% extends 'base.html.twig' %}
 
 {% block body %}
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-            <div class="carousel-item px-3 active">
-                <img src="{{ asset('images/D0EE8D74-BFA3-4CC1-92A1-58241AC7138F.JPG') }}" class="d-block w-100 rounded object-fit-cover vh-50 bg-pos-bottom-center" alt="...">
+    <div class="swup">
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item px-3 active">
+                    <img src="{{ asset('images/D0EE8D74-BFA3-4CC1-92A1-58241AC7138F.JPG') }}"
+                         class="d-block w-100 rounded object-fit-cover vh-50 bg-pos-bottom-center" alt="...">
+                </div>
+                <div class="carousel-item px-3">
+                    <img src="{{ asset('images/2AC0FC34-6840-47DE-873A-493E6B310014.JPG') }}"
+                         class="d-block w-100 rounded object-fit-cover vh-50 bg-pos-center-center" alt="...">
+                </div>
+                <div class="carousel-item px-3">
+                    <img src="{{ asset('images/E46BC283-6EE0-4781-847E-4AE2901D3B1C.JPG') }}"
+                         class="d-block w-100 rounded object-fit-cover vh-50 bg-pos-center-center" alt="...">
+                </div>
             </div>
-            <div class="carousel-item px-3">
-                <img src="{{ asset('images/2AC0FC34-6840-47DE-873A-493E6B310014.JPG') }}" class="d-block w-100 rounded object-fit-cover vh-50 bg-pos-center-center" alt="...">
-            </div>
-            <div class="carousel-item px-3">
-                <img src="{{ asset('images/E46BC283-6EE0-4781-847E-4AE2901D3B1C.JPG') }}" class="d-block w-100 rounded object-fit-cover vh-50 bg-pos-center-center" alt="...">
-            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
     </div>
 {% endblock %}

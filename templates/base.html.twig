@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app.locale }}" {{ stimulus_controller('color-theme') }} data-bs-theme="light" >
+<html lang="{{ app.locale }}" {{ stimulus_controller('color-theme') }} data-bs-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,7 +11,10 @@
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
 </head>
-<body>
+<body {{ stimulus_controller('symfony/ux-swup/swup', {
+    containers: ['.swup'],
+    animateHistoryBrowsing: true,
+}) }}>
 {{ include('partial/_navbar.html.twig') }}
 {% block body %}{% endblock %}
 </body>
