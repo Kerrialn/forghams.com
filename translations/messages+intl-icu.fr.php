@@ -7,7 +7,7 @@ return [
     'about' => 'à propos',
     'take-away-cake-menu' => 'menu des gâteaux à emporter',
     'services' => 'services',
-    'private-chef-at-home-service' => 'chef privé à domicile',
+    'private-chef-at-home-service' => 'chef privé',
     'private-chef-at-home-service-explainer' => 'Offrez-vous le luxe de la cuisine internationale dans le confort de votre propre maison ou lieu privé. Notre service de chef privé propose des menus personnalisés, avec des plats du monde entier, préparés avec les ingrédients les plus frais et présentés avec un flair professionnel. Détendez-vous et profitez d\'une expérience culinaire exquise et sans stress pendant que notre chef s\'occupe de tout, de l\'installation au nettoyage. Parfait pour les dîners intimes, les réunions de famille ou les occasions spéciales, notre service apporte la gastronomie directement chez vous.',
     'tailor-made-service' => 'sur mesure',
     'tailor-made-service-explainer' => 'Nous prenons le temps de créer un menu personnalisé rien que pour vous, en accordant une attention particulière aux allergies, aux exigences alimentaires, aux goûts et aux aversions. Vos préférences culinaires sont notre priorité, garantissant que chaque plat est adapté à vos goûts et besoins.',

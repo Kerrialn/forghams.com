@@ -7,7 +7,7 @@ return [
   'about' => 'about',
   'take-away-cake-menu' => 'take away cake menu',
   'services' => 'services',
-    'private-chef-at-home-service' => 'private chef at home',
+    'private-chef-at-home-service' => 'private chef',
     'private-chef-at-home-service-explainer' => 'Indulge in the luxury of international cuisine in the comfort of your own home or private venue. Our private chef service offers customized menus, featuring dishes from around the world, prepared with the freshest ingredients and presented with professional flair. Relax and enjoy a stress-free, exquisite dining experience as our chef takes care of everything, from setup to cleanup. Perfect for intimate dinners, family gatherings, or special occasions, our service brings gourmet dining directly to you.',
     'tailor-made-service' => 'tailor made',
     'tailor-made-service-explainer' => 'We take the time to craft a personalized menu just for you, paying close attention to allergies, dietary requirements, likes, and dislikes. Your culinary preferences are our priority, ensuring every dish is tailored to your taste and needs.',
