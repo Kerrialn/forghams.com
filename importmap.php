@@ -56,4 +56,10 @@ return [
     '@swup/debug-plugin' => [
         'version' => '3.0.0',
     ],
+    'stimulus-image-grid' => [
+        'version' => '1.0.3',
+    ],
+    'stimulus' => [
+        'version' => '3.2.2',
+    ],
 ];
