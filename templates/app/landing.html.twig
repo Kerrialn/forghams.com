@@ -5,35 +5,51 @@
         [
             {
                 id: "1",
-                asset: asset('images/BCA73D16-620F-4DF0-9C21-C2B2CA731132.JPG')
+                asset: asset('images/landing/food_image_one.jpg'),
+                height: "350",
+                width: "350"
             },
             {
                 id: "2",
-                asset: asset('images/2AC0FC34-6840-47DE-873A-493E6B310014.JPG')
+                asset: asset('images/landing/food_image_two.jpeg'),
+                height: "350",
+                width: "350"
             },
             {
                 id: "3",
-                asset: asset('images/1D6DF729-D237-46C3-A76C-8447EC8527AA.JPG')
+                asset: asset('images/landing/food_image_three.jpg'),
+                height: "350",
+                width: "350"
             },
             {
                 id: "4",
-                asset: asset('images/classes.jpg')
+                asset: asset('images/landing/food_image_four.jpg'),
+                height: "350",
+                width: "350"
             },
             {
                 id: "6",
-                asset: asset('images/328781A0-309E-4DB4-A0E8-E4D4118D927E.JPG')
+                asset: asset('images/landing/food_image_five.jpg'),
+                height: "350",
+                width: "350"
             },
             {
                 id: "5",
-                asset: asset('images/2FFD3EEC-DD82-4A53-8AD6-290F2DDC2105.JPG')
+                asset: asset('images/landing/food_image_six.jpg'),
+                height: "350",
+                width: "350"
             },
             {
                 id: "7",
-                asset: asset('images/8D312B9E-62F8-41E5-90C2-D607C84D0216.JPG')
+                asset: asset('images/landing/food_image_seven.jpg'),
+                height: "350",
+                width: "350"
             },
             {
                 id: "8",
-                asset: asset('images/chocolate.jpg')
+                asset: asset('images/landing/food_image_eight.jpg'),
+                height: "350",
+                width: "350"
             }
         ] %}
 
@@ -41,12 +57,12 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-12">
                 <div {{ stimulus_controller('image-grid',{
-                    padding: 20
+                    padding: 20,
                 }) }}
                         data-image-grid-target-height-value="350"
                 >
                     {% for image in images %}
-                        <img data-width="350" class="img-fluid" id="image-{{ image.id }}" src="{{ image.asset }}" alt="{{ image.id }}"/>
+                        <img width="420" data-width="420" id="image-{{ image.id }}" src="{{ image.asset }}" alt="{{ image.id }}"/>
                     {% endfor %}
                 </div>
             </div>
