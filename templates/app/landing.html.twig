@@ -46,7 +46,7 @@
                         data-image-grid-target-height-value="400"
                 >
                     {% for image in images %}
-                        <img class="img-fluid" id="image-{{ image.id }}" src="{{ image.asset }}" alt="{{ image.id }}"/>
+                        <img data-width="350" class="img-fluid" id="image-{{ image.id }}" src="{{ image.asset }}" alt="{{ image.id }}"/>
                     {% endfor %}
                 </div>
             </div>
