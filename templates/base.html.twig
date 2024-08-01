@@ -11,10 +11,7 @@
         {% block importmap %}{{ importmap('app') }}{% endblock %}
     {% endblock %}
 </head>
-<body {{ stimulus_controller('symfony/ux-swup/swup', {
-    containers: ['#nav', '#main'],
-    animateHistoryBrowsing: true,
-}) }}>
+<body>
 <div id="nav">
     {{ include('partial/_navbar.html.twig') }}
 </div>
