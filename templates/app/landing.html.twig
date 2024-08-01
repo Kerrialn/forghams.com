@@ -43,7 +43,7 @@
                 <div {{ stimulus_controller('image-grid',{
                     padding: 20
                 }) }}
-                        data-image-grid-target-height-value="400"
+                        data-image-grid-target-height-value="350"
                 >
                     {% for image in images %}
                         <img data-width="350" class="img-fluid" id="image-{{ image.id }}" src="{{ image.asset }}" alt="{{ image.id }}"/>
